@@ -34,7 +34,7 @@ html, body{
     position: absolute;
     font-size: 25px;
     z-index: 999;
-    width: 37%;
+    width: 100%;
     /* background-color: red; */
     text-align: center;
     font-family:'Russo One', sans-serif;
@@ -166,11 +166,42 @@ html, body{
     font-size: 30px;
 }
 
+/* MAKING ANIMATIONS FOR THE TEXT- BRAND SCROLLING */
+
 @keyframes scroll{
     0%{
         transform: translateX(calc(-100% - 33px));
     }
     100%{
         transform: translateX(0);
+    }
+}
+
+/* ADDED RESPONSIVENESS CODE */
+
+@media(max-width:650px)
+{
+    #main>img{
+        height: 600px;
+        width: 300px;
+    }
+    #text{
+        width: 95%;
+        font-size: 15px;
+    }
+    #scroll-div>h1{
+        font-size: 100px;
+    }
+    #scroll-div2>h1{
+        font-size: 100px;
+    }
+    #scroll-div3>h1{
+        font-size: 100px;
+    }
+    #scroll-div{
+        top: 25%;
+    }
+    #scoll-div3{
+        top: 55%;
     }
 }
