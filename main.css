@@ -71,6 +71,10 @@ html, body{
     margin-right: 10px;
     letter-spacing: 5px;
     text-transform: uppercase;
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 
@@ -107,6 +111,12 @@ html, body{
     color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+
 }
 
 
@@ -139,6 +149,11 @@ html, body{
     margin-right: 10px;
     letter-spacing: 5px;
     text-transform: uppercase;
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
 }
 
 #creator-text{
@@ -149,4 +164,13 @@ html, body{
     z-index: 101;
     top: 15%;
     font-size: 30px;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(calc(-100% - 33px));
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
